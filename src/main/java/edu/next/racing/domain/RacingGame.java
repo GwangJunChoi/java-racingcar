@@ -56,7 +56,7 @@ public class RacingGame {
     public List<Car> getWinner() {
         int winnerPosition = setWinnerPosition();
         return cars.stream()
-                .filter(car -> car.getPosition() == winnerPosition)
+                .filter(car -> car.getPosition() == setWinnerPosition())
                 .collect(Collectors.toList());
     }
 
